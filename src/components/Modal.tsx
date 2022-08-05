@@ -7,7 +7,7 @@ type Props = {
 
 const Modal = ({ toogleModal }: Props) => {
   return (
-    <div className="w-screen h-screen bg-light/[.4] fixed top-0 left-0 flex  justify-center items-center">
+    <div className="w-screen h-screen z-20	 bg-light/[.4] fixed top-0 left-0 flex  justify-center items-center">
       <div className="bg-light dark:bg-backDark w-1/3 h-5/6 rounded-xl border-base dark:border-backLight border-4 flex flex-col gap-2 justify-evenly items-center p-8">
         <h1 className="text-3xl font-bold">Cómo jugar?</h1>
         <div className="flex h-32 flex-col items-start justify-around text-sm">
