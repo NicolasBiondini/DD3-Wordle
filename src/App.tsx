@@ -8,6 +8,7 @@ import { GameContext } from "./context/GameProvider";
 import { selectWords } from "./helpers/selectWords";
 import More from "./components/icons/More";
 import InfoLogo from "./components/icons/InfoLogo";
+import Toogle from "./components/Toogle";
 
 function App() {
   const {
@@ -65,9 +66,7 @@ function App() {
               color={theme === "ligth" ? "rgba(147, 155, 159, 0.3)" : "#262B3C"}
             />
           </div>
-          <div onClick={handleTheme} className={"cursor-pointer"}>
-            Switch
-          </div>
+          <Toogle handleTheme={handleTheme} />
         </div>
       </div>
       <Board />
